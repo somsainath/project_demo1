@@ -1,0 +1,62 @@
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git checkout -b css-assignments
+Switched to a new branch 'css-assignments'
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (css-assignments)
+$ git add README.TXT
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (css-assignments)
+$ git commit -m 'css-assignments readme.txt changed'
+[css-assignments 931ec47] css-assignments readme.txt changed
+ 1 file changed, 1 insertion(+)
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git add README.TXT
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git  commit -m 'changes via master (css)'
+[master d95c645] changes via master (css)
+ 1 file changed, 1 insertion(+)
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (css-assignments)
+$ git add README.TXT
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (css-assignments)
+$ git commit -m 'changes in master branch'
+[css-assignments 219ea22] changes in master branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (css-assignments)
+$ git status
+On branch css-assignments
+nothing to commit, working tree clean
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git merge css-assignments
+Auto-merging README.TXT
+Merge made by the 'recursive' strategy.
+ README.TXT | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git branch -d css-assignments
+Deleted branch css-assignments (was 219ea22).
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)

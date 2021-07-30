@@ -1,0 +1,150 @@
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~
+$ mkdir Assignments
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~
+$ cd Assignments
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments
+$ git init
+Initialized empty Git repository in C:/Users/Welcome/Assignments/.git/
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ touch README.TXT
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git add README.TXT
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.TXT
+
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git commit -m 'commited  readme file'
+[master (root-commit) bf2d59b] commited  readme file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.TXT
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git checkout -b html-assignments
+Switched to a new branch 'html-assignments'
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+nothing to commit, working tree clean
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.TXT
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (html-assignments)
+$ git add README.TXT
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (html-assignments)
+$ git -m "edited in html-assignments branch"
+unknown option: -m
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (html-assignments)
+$ git commit -m "edited in html-assignments"
+[html-assignments aaaa1cd] edited in html-assignments
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.TXT
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git add README.TXT
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git commit -m "changed some text in master branch"
+[master 13fcf9a] changed some text in master branch
+ 1 file changed, 1 insertion(+)
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git checkout help-assignments
+error: pathspec 'help-assignments' did not match any file(s) known to git
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (html-assignments)
+$ git add README.TXT
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (html-assignments)
+$ git commit -m 'second tym changed radme txt"
+> '
+[html-assignments c97c869] second tym changed radme txt"
+ 1 file changed, 1 insertion(+)
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+nothing to commit, working tree clean
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git merge html-assignments
+Auto-merging README.TXT
+CONFLICT (content): Merge conflict in README.TXT
+Automatic merge failed; fix conflicts and then commit the result.
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.TXT
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master|MERGING)
+$ git add README.TXT
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master|MERGING)
+$ git commit -m 'merge completed'
+[master 01f0b73] merge completed
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$ git branch -d html-assignments
+Deleted branch html-assignments (was c97c869).
+
+Welcome@DESKTOP-T6MK6R6 MINGW64 ~/Assignments (master)
+$
